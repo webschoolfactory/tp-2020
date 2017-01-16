@@ -11,6 +11,11 @@
     "socket.io": "^1.7.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test:lint": "eslint public index.js"
+  },
+  "devDependencies": {
+    "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
+    "eslint": "^3.13.1"
   }
 }
