@@ -35,7 +35,7 @@ biketeman:
 
 kjulien: Kevin Jullien ![Kevin Jullien](public/images/kjullien.png)
 
-louispch:
+louispch: Louis Paicheur ![Louis Photo](public/images/lpaicheur.png)
 
 maxvit:
 
