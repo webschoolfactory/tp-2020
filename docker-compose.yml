@@ -1,0 +1,8 @@
+version: "2"
+services:
+  chat:
+    build:
+      context: .
+    restart: on_failure
+    ports:
+      - 3000:3000
