@@ -35,7 +35,7 @@ biketeman:
 
 kjulien:
 
-louispch:
+louispch: Louis Paicheur ![Louis Photo](public/images/lpaicheur.png)
 
 maxvit:
 
