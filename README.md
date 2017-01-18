@@ -43,7 +43,7 @@ nqueuche:
 
 PierreBouchet:
 
-theodugautier:
+theodugautier: Théo Dugautier ![Théo Photo](public/images/tdugautier.jpeg)
 
 thibw:
 
