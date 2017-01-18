@@ -33,7 +33,7 @@ Aydemphia:
 
 biketeman:
 
-kjulien:
+kjulien: Kevin Jullien ![Kevin Jullien](public/images/kjullien.png)
 
 louispch:
 
