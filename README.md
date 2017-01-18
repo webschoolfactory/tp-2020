@@ -45,6 +45,6 @@ PierreBouchet:
 
 theodugautier:
 
-thibw:
+thibw: Thibault Weiser ![Thibault photo](public/images/WEISER-Thibault-G-copie-light.jpg)
 
 xheid:
