@@ -23,3 +23,28 @@ on website load.
 - Users can type chat messages to the chat room.
 - A notification is sent to all users when a user joins or leaves
 the chatroom.
+
+
+## Team
+
+lcalvy: Loïc Calvy ![Loïc Photo](public/images/lcalvy.png)
+
+Aydemphia:
+
+biketeman:
+
+kjulien:
+
+louispch:
+
+maxvit:
+
+nqueuche:
+
+PierreBouchet:
+
+theodugautier:
+
+thibw:
+
+xheid:
