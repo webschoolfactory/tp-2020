@@ -37,7 +37,7 @@ kjulien:
 
 louispch:
 
-maxvit:
+maxvit: Maxime Vitellaro ![Maxime Photo](public/images/mv.jpg)
 
 nqueuche:
 
