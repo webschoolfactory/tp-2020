@@ -47,4 +47,4 @@ theodugautier:
 
 thibw:
 
-xheid:
+xheid: Victor Bléchet ![c'est la photo de moi](public/images/KaaDoc.jpg)
