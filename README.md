@@ -39,7 +39,7 @@ louispch:
 
 maxvit:
 
-nqueuche:
+nqueuche: Nina Queuche ![Nina Photo](public/images/myAvatar.png)
 
 PierreBouchet:
 
