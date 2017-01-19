@@ -1,4 +1,4 @@
-﻿
+
 # Socket.IO Chat
 
 A simple chat demo for socket.io
@@ -27,7 +27,7 @@ the chatroom.
 
 ## Team
 
-lcalvy: Jean Loic Calvy ![Jean Loic Photo](public/images/lcalvy.png)
+lcalvy: Jean Loïc Calvy yolo2![Loïc Photo](public/images/lcalvy.png)
 
 Aydemphia: Thomas Moretau ![Thomas Photo](public/images/aydemphia.png)
 
