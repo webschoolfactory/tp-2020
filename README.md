@@ -1,4 +1,4 @@
-
+﻿
 # Socket.IO Chat
 
 A simple chat demo for socket.io
@@ -37,7 +37,7 @@ kjulien: Kevin Jullien ![Kevin Jullien](public/images/kjullien.png)
 
 louispch: Louis Paicheur ![Louis Photo](public/images/lpaicheur.png)
 
-maxvit: Maxime Vitellaro ![Maxime Photo](public/images/mv.jpg)
+maxvit: Maxime Vitellaro ![Maxime Photo](public/images/mv.png)
 
 nqueuche:
 
