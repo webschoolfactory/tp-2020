@@ -27,7 +27,7 @@ the chatroom.
 
 ## Team
 
-lcalvy: Loïc Calvy ![Loïc Photo](public/images/lcalvy.png)
+lcalvy: Jean Loic Calvy ![Jean Loic Photo](public/images/lcalvy.png)
 
 Aydemphia: Thomas Moretau ![Thomas Photo](public/images/aydemphia.png)
 
