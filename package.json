@@ -14,8 +14,9 @@
     "start": "node index.js",
     "test": "npm run test:lint && npm run test:cover",
     "test:lint": "eslint public index.js",
-    "test:spec": "mocha -R dot \"./test/spec/**/*spec.js\"",
+    "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\"",
     "test:cover": "istanbul cover _mocha -- \"./test/spec/**/*spec.js\"",
+    "test:e2e": "./node_modules/.bin/wdio",
     "cover:publish": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "devDependencies": {
