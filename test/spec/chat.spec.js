@@ -35,6 +35,7 @@ describe('chat', function() {
     };
     socket.username = 'loic';
     const newMessage = chat.typing(socket);
+    typing();
   });
 });
 
