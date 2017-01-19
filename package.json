@@ -12,10 +12,12 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test:lint": "eslint public index.js"
+    "test:lint": "eslint public index.js",
+    "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\""
   },
   "devDependencies": {
     "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
-    "eslint": "^3.13.1"
+    "eslint": "^3.13.1",
+    "mocha": "^3.2.0"
   }
 }
