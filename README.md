@@ -39,7 +39,7 @@ louispch: Louis Paicheur ![Louis Photo](public/images/lpaicheur.png)
 
 maxvit: Maxime Vitellaro ![Maxime Photo](public/images/mv.jpg)
 
-nqueuche:
+nqueuche: Nina Queuche ![Nina Queuche](public/images/NinaAvatar.png)
 
 PierreBouchet:
 
