@@ -37,7 +37,7 @@ kjulien: Kevin Jullien ![Kevin Jullien](public/images/kjullien.png)
 
 louispch: Louis Paicheur ![Louis Photo](public/images/lpaicheur.png)
 
-maxvit:
+maxvit: Maxime Vitellaro ![Maxime Photo](public/images/mv.jpg)
 
 nqueuche:
 
