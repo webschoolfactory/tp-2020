@@ -41,7 +41,7 @@ maxvit: Maxime Vitellaro ![Maxime Photo](public/images/mv.png)
 
 nqueuche:
 
-PierreBouchet:
+PierreBouchet: Pierre Bouchet ![Pierre Photo](public/images/smallpierre.png)
 
 theodugautier: Théo Dugautier ![Théo Photo](public/images/tdugautier.jpeg)
 
