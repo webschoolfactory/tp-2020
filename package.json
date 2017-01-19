@@ -12,6 +12,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "test": "npm run test:lint && npm run test:spec",
     "test:lint": "eslint public index.js",
     "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\""
   },
