@@ -20,4 +20,21 @@ describe('chat', function() {
     const newMessage = chat.newMessage(socket);
     newMessage('yolo');
   });
+
+  it('should show typing', function(done) {
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          assert.deepEqual(type, 'typing');
+          assert.deepEqual(msg, {
+            username: 'loic',
+          });
+          done();
+        }
+      }
+    };
+    socket.username = 'loic';
+    const newTyping = chat.typing(socket);
+    newTyping();
+  });
 });
