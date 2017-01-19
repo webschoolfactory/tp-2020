@@ -31,7 +31,7 @@ lcalvy: Jean Loïc Calvy yolo2![Loïc Photo](public/images/lcalvy.png)
 
 Aydemphia: Thomas Moretau ![Thomas Photo](public/images/aydemphia.png)
 
-biketeman:
+biketeman: Alexis Lagniel ![Alexis Photo](public/images/bikete.png)
 
 kjulien: Kevin Jullien ![Kevin Jullien](public/images/kjullien.png)
 
