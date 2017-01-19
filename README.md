@@ -29,7 +29,7 @@ the chatroom.
 
 lcalvy: Loïc Calvy ![Loïc Photo](public/images/lcalvy.png)
 
-Aydemphia:
+Aydemphia: Thomas Moretau ![Thomas Photo](public/images/aydemphia.png)
 
 biketeman:
 
