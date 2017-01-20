@@ -12,13 +12,17 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "npm run test:lint && npm run test:spec",
+    "test": "npm run test:lint && npm run test:cover",
     "test:lint": "eslint public index.js",
-    "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\""
+    "test:spec": "mocha -R dot \"./test/spec/**/*spec.js\"",
+    "test:cover": "istanbul cover _mocha -- \"./test/spec/**/*spec.js\"",
+    "cover:publish": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "devDependencies": {
     "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
+    "coveralls": "^2.11.15",
     "eslint": "^3.13.1",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
   }
 }
