@@ -91,6 +91,40 @@ describe('chat', function() {
     const stopTyping = chat.stopTyping(socket);
     stopTyping();
   });
+
+  it('should show disconnect', function(done) {
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          assert.deepEqual(type, 'user left');
+          assert.deepEqual(msg, {
+            username: 'loic',
+            numUsers: 0
+          });
+          done();
+        }
+      }
+    };
+    socket.username = 'loic';
+    socket.addedUser = true;
+    const disconnect = chat.disconnect(socket);
+    disconnect('loic');
+  });
+
+  it('should show not disconnect', function(done) {
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          done(new Error('should not execute this code'));
+        }
+      }
+    };
+    socket.username = 'loic';
+    socket.addedUser = false;
+    const disconnect = chat.disconnect(socket);
+    disconnect('loic');
+    done();
+  });
 });
 
 
