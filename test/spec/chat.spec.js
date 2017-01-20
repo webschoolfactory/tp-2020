@@ -37,6 +37,23 @@ describe('chat', function() {
     const typing = chat.typing(socket);
     typing();
   });
+
+  it('should stop typing', function(done) {
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          assert.deepEqual(type, 'stop typing');
+          assert.deepEqual(msg, {
+            username: 'loic'
+          });
+          done();
+        }
+      }
+    };
+    socket.username = 'loic';
+    const stopTyping = chat.stopTyping(socket);
+    stopTyping();
+  });
 });
 
 
