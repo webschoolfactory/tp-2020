@@ -38,6 +38,43 @@ describe('chat', function() {
     typing();
   });
 
+  it('should add new user', function(done) {
+    const socket = {
+      emit: function(type, msg) {
+        assert.deepEqual(type, 'login');
+         assert.deepEqual(msg, {
+            numUsers: 1
+          });
+      },
+      broadcast: {
+        emit: function(type, msg) {
+          assert.deepEqual(type, 'user joined');
+          assert.deepEqual(msg, {
+            username: 'loic',
+            numUsers: 1
+          });
+          done();
+        }
+      }
+    };
+    socket.username = 'loic';
+    const addUser = chat.addUser(socket);
+    addUser('loic');
+  });
+
+    it('should not add user', function(done) {
+    const socket = {
+      emit: function(type, msg) {
+        done(new Error('should not be executed'));
+      }
+    };
+    socket.username = 'loic';
+    socket.addedUser = true;
+    const addUser = chat.addUser(socket);
+    addUser('loic');
+    done();
+  });
+
   it('should stop typing', function(done) {
     const socket = {
       broadcast: {
