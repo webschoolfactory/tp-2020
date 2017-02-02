@@ -1,8 +1,20 @@
 const assert = require('assert');
+const redis = require('redis');
+const bluebird = require('bluebird');
 
+const client = redis.createClient();
+bluebird.promisifyAll(client);
 const chat = require('../../chat');
 
 describe('chat', function() {
+  it('should clear', function() {
+    chat.clearUsers(null, client)();
+    return client.getAsync('numusers')
+    .then(numUsers => {
+      return assert.deepEqual(numUsers, 0);
+    });
+  });
+
   it('should broadcast new message', function(done) {
     const socket = {
       broadcast: {
@@ -17,7 +29,7 @@ describe('chat', function() {
       }
     };
     socket.username = 'loic';
-    const newMessage = chat.newMessage(socket);
+    const newMessage = chat.newMessage(socket, client);
     newMessage('yolo');
   });
 
@@ -34,7 +46,7 @@ describe('chat', function() {
       }
     };
     socket.username = 'loic';
-    const typing = chat.typing(socket);
+    const typing = chat.typing(socket, client);
     typing();
   });
 
@@ -58,7 +70,7 @@ describe('chat', function() {
       }
     };
     socket.username = 'loic';
-    const addUser = chat.addUser(socket);
+    const addUser = chat.addUser(socket, client);
     addUser('loic');
   });
 
@@ -70,7 +82,7 @@ describe('chat', function() {
     };
     socket.username = 'loic';
     socket.addedUser = true;
-    const addUser = chat.addUser(socket);
+    const addUser = chat.addUser(socket, client);
     addUser('loic');
     done();
   });
@@ -88,7 +100,7 @@ describe('chat', function() {
       }
     };
     socket.username = 'loic';
-    const stopTyping = chat.stopTyping(socket);
+    const stopTyping = chat.stopTyping(socket, client);
     stopTyping();
   });
 
@@ -107,7 +119,7 @@ describe('chat', function() {
     };
     socket.username = 'loic';
     socket.addedUser = true;
-    const disconnect = chat.disconnect(socket);
+    const disconnect = chat.disconnect(socket, client);
     disconnect('loic');
   });
 
@@ -121,7 +133,7 @@ describe('chat', function() {
     };
     socket.username = 'loic';
     socket.addedUser = false;
-    const disconnect = chat.disconnect(socket);
+    const disconnect = chat.disconnect(socket, client);
     disconnect('loic');
     done();
   });
