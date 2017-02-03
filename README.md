@@ -45,6 +45,6 @@ PierreBouchet: Pierre Bouchet ![Pierre Photo](public/images/smallpierre.png)
 
 theodugautier: Théo Dugautier ![Théo Photo](public/images/tdugautier.jpeg)
 
-thibw:
+thibw: Thibault Weiser ![Thibault photo](public/images/WEISER-Thibault-G-copie-light.jpg)
 
 xheid: Victor Bléchet ![c'est la photo de moi](public/images/KaaDoc.jpg)
