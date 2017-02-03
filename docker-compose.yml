@@ -3,6 +3,15 @@ services:
   chat:
     build:
       context: .
-    restart: on_failure
     ports:
       - 3000:3000
+    links:
+      - redis
+    environment:
+      REDIS_HOST: redis
+    volumes:
+      - .:/usr/src/app
+  redis:
+    image: redis:3.0.7
+    ports:
+      - 6379:6379
